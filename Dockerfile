@@ -1,7 +1,10 @@
-FROM n8nio/n8n:latest
-
-ENV N8N_PORT=5678
-
-EXPOSE 5678
-
-CMD ["n8n"]
+{
+  "name": "n8n-render",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "n8n start"
+  },
+  "dependencies": {
+    "n8n": "latest"
+  }
+}
